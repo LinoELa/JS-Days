@@ -206,17 +206,40 @@ console.log("Day 4\t3\t5");
 console.log("This is a backslash  symbol (\\)"); // To write a backslash
 console.log('In every programming language it starts with "Hello, World!"');
 console.log("In every programming language it starts with 'Hello, World!'");
-console.log(
-  "The saying 'Seeing is Believing' isn't correct in 2020"
-)// Template Literals (Template Strings)
-//Syntax
-`String literal text``String literal text ${expression}`;
+console.log("The saying 'Seeing is Believing' isn't correct in 2020"); //Syntax // Template Literals (Template Strings)
+
 console.log(`The sum of 2 and 3 is 5`); // statically writing the data
 let a = 2;
 let b = 3;
 console.log(`The sum of ${a} and ${b} is ${a + b}`); // injecting the data dynamically
+console.log("----------------------------");
 
 let personInfoTwo = `I am ${fullName}. I am ${age}. I live in ${country}.`; //ES6 - String interpolation method
 let personInfoThree = `I am ${fullName}. I live in ${city}, ${country}. I am a ${job}. I teach ${language}.`;
 console.log(personInfoTwo);
 console.log(personInfoThree);
+
+console.log("----------------------------");
+
+// String Methods
+let js = "JavaScript";
+console.log(js.length);
+let firstname = "Asabeneh";
+console.log(firstname);
+
+// Access Different carracter
+let string = "JavaScript";
+let firstLetter = string[0];
+
+console.log(firstLetter); // J
+
+let secondLetter = string[1]; // a
+let thirdLetter = string[2];
+let lastLetter = string[9];
+
+console.log(lastLetter); // t
+
+let lastIndex = string.length - 1;
+
+console.log(lastIndex); // 9
+console.log(string[lastIndex]); // t
